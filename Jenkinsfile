@@ -2,10 +2,22 @@ pipeline {
     agent any
 
     stages {
-        
-        stage('Check') {
+        stage('Branch-Name-Check') {
             steps {
-                publishChecks name: 'dummy', summary: 'lore ipsum', text: 'Das ist der Text', title: 'Dummy Check'
+                publishChecks name: 'Branch Name Check', summary: 'Verifies the Branch-Name contains a JIRA-Ticket', 
+                      text: 'Verifies the Branch-Name contains a JIRA-Ticket', title: 'Branch Name Check'
+            }
+        }
+        stage('Commit-Messages-Check') {
+            steps {
+                publishChecks name: 'Commit Messages Check', summary: 'Verifies each Commit-Meesage contains a JIRA-Ticket', 
+                      text: 'Verifies each Commit-Meesage contains a JIRA-Ticket', title: 'Branch Name Check'
+            }
+        }
+        stage('PR-Name-Check') {
+            steps {
+                publishChecks name: 'PR Name Check', summary: 'Verifies the PR-Name contains a JIRA-Ticket', 
+                      text: 'Verifies the PR-Name contains a JIRA-Ticket', title: 'Branch Name Check'
             }
         }
     }
