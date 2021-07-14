@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        
+        stage('Check') {
             steps {
-                echo 'Hello World'
+                publishChecks name: 'dummy', summary: 'lore ipsum', text: 'Das ist der Text', title: 'Dummy Check'
             }
         }
     }
