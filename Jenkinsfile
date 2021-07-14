@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Commit-Messages-Check') {
             steps {
-                publishChecks name: 'Commit Messages Check XXX', summary: 'Verifies each Commit-Meesage contains a JIRA-Ticket', 
+                publishChecks name: 'Commit Messages Check', summary: 'Verifies each Commit-Meesage contains a JIRA-Ticket', 
                       text: 'Verifies each Commit-Meesage contains a JIRA-Ticket', title: 'Commit-Message Check '
             }
         }
