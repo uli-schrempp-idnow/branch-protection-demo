@@ -7,3 +7,4 @@ added some more text
 ## foobar
 yeah mo foobar
 
+## NEW Feature
