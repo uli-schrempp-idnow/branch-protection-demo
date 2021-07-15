@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Branch-Name-Check') {
             steps {
-                publishChecks name: 'Branch Name Check', summary: 'Verifies the Branch-Name contains a JIRA-Ticket', 
+                publishChecks name: 'Branch Name Check XXX', summary: 'Verifies the Branch-Name contains a JIRA-Ticket', 
                       text: 'Verifies the Branch-Name contains a JIRA-Ticket', title: 'Branch Name Check'
             }
         }
@@ -16,7 +16,7 @@ pipeline {
         }
         stage('PR-Name-Check') {
             steps {
-                publishChecks name: 'PR Name Check', summary: 'Verifies the PR-Name contains a JIRA-Ticket', 
+                publishChecks name: 'PR Name Check XXX', summary: 'Verifies the PR-Name contains a JIRA-Ticket', 
                       text: 'Verifies the PR-Name contains a JIRA-Ticket', title: 'PR Name Check'
             }
         }
