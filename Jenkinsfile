@@ -16,7 +16,7 @@ pipeline {
             steps {
                 greeting("Servus von der Library")
                 validateGitBranchName()
-                validateGitCommmitMessages()
+                validateGitCommitMessages()
                 prJiraCrosscheck()
             }
         }
