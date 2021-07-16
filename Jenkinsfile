@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Library Checks') {
             steps {
-                pr-jira-crosscheck()
+                prJiraCrosscheck()
             }
         }
         stage('Branch-Name-Check') {
