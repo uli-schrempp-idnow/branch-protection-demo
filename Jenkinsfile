@@ -15,8 +15,6 @@ pipeline {
         stage('Library Checks') {
             steps {
                 greeting("Servus von der Library")
-                validateGitBranchName()
-                validateGitCommitMessages()
                 prJiraCrosscheck()
             }
         }
