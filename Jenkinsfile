@@ -3,7 +3,9 @@ pipeline {
 
     stages {
         stage('Build') {
-            echo "Bob the Baumeister ..."
+            steps {
+                echo "Bob the Baumeister ..."
+            }
         }
         stage('Branch-Name-Check') {
             steps {
