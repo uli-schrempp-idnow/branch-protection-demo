@@ -7,6 +7,11 @@ pipeline {
                 echo "Bob the Baumeister ..."
             }
         }
+        stage('Environment') {
+            steps {
+                sh "printenv"
+            }
+        }
         stage('Branch-Name-Check') {
             steps {
                 publishChecks name: 'Branch Name Check XXX', summary: 'Verifies the Branch-Name contains a JIRA-Ticket', 
