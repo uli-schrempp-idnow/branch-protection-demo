@@ -12,6 +12,11 @@ pipeline {
                 sh "printenv"
             }
         }
+        stage('Library Checks') {
+            steps {
+                prJiraCrosscheck()
+            }
+        }
         stage('Branch-Name-Check') {
             steps {
                 publishChecks name: 'Branch Name Check XXX', summary: 'Verifies the Branch-Name contains a JIRA-Ticket', 
