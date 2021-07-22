@@ -6,3 +6,4 @@ Repo to test the Checks and Branch-Protection-Rules.
 * QA-71 Next Feature Branch
 * QA-71 Over-Next Feature Branch
 * QA-71 Another Feature Branch
+* QA-71 Juhu - DemoTag
